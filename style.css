@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'scary-font';
+    src: url('samdan/Samdan.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    border: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+p{
+    font-family: 'scary-font', Samdan;
+    font-size: xx-large;
+    padding: 5vh;
+    position: relative;
+}
+
+.light {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(245, 198, 145, 0.8) 0%, rgba(173, 54, 54, 0) 60%);
+    pointer-events: none;
+    mix-blend-mode: screen; /* Blending mode to enhance the effect */
+    border-radius: 50%; /* Circular shape for the light */
+    transition: width 0.2s, height 0.2s; /* Smooth transition for size changes */
+    z-index: -20;
+    
+}
+
+.ring {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(61, 58, 55, 0.8) 0%, rgba(255,255,255,0) 80%);
+    pointer-events: none;
+    mix-blend-mode: screen; /* Blending mode to enhance the effect */
+    border-radius: 50%; /* Circular shape for the light */
+    transition: width 0.2s, height 0.2s; /* Smooth transition for size changes */
+    z-index: -20;
+}
+
+h1 {
+    font-family: 'scary-font', samdan;
+    font-size: xx-large;
+    text-align: center; /* Center text horizontally */
+
+}
+
+.mext {
+    position: fixed; /* Position relative to the viewport */
+    bottom: 20px; /* 20px from the bottom edge */
+    right: 20px; /* 20px from the right edge */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    background-color: transparent;
+    font-family: 'scary-font', samdan;
+    
+}
+
+
+
